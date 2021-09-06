@@ -11,7 +11,8 @@ const config = {
   "password": process.env.DB_PASSWORD,
   "database": process.env.DB_SCHEMA,
   "host": process.env.DB_HOST,
-  "dialect": process.env.DB_DIALECT  
+  "dialect": process.env.DB_DIALECT,
+  "port": process.env.DB_PORT
 }
 let sequelize = new Sequelize(config.database, config.username, config.password, config);
 

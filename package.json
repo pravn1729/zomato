@@ -1,9 +1,10 @@
 {
-  "name": "trucopycert-service",
+  "name": "zomato-service",
   "version": "1.0.0",
   "scripts": {
     "start": "node -r esm ./src/bin/www",
-    "dev": "nodemon -r esm ./src/bin/www"
+    "dev": "nodemon -r esm ./src/bin/www",
+    "test": "jest --passWithNoTests --detectOpenHandles"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -21,6 +22,7 @@
     "@babel/core": "^7.13.14",
     "@babel/plugin-transform-runtime": "^7.13.10",
     "@babel/preset-env": "^7.13.12",
+    "jest": "^27.1.0",
     "nodemon": "^2.0.12",
     "sequelize-cli": "^6.2.0"
   }
